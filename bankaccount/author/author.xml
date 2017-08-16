@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Hello World Webservice Sub build :- About Auther" basedir=".">
+	<target name="about.author" description="About the author">
+	<echo> Auther Name: Masero Collins </echo>
+	<echo> E-mail     : jnrmasero@gmail.com </echo>
+	<echo> Phone      : +254727659180 </echo>
+	<echo> ${user.home} </echo>
+	</target>
+</project>

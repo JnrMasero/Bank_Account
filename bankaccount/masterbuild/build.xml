@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Order application" default="build" basedir="../">
+	<import file="common_build.xml"/>
+    <target name="run.advice" description="Show basedir">
+			<echo> Please run 'ant -p' and select an option </echo>
+			<echo> ${basedir} </echo>
+    </target>
+        
+    <target name="client" description="run client" depends="build">
+        <property name="param" value=""/>
+        <cxfrun classname="com.orderProcessClient.service.Client" />
+    </target> 
+    <property name="cxf.war.file.name" value="BankAccount"/>
+      <target name="war" depends="build">
+	  <cxfwar filename="${cxf.war.file.name}.war" webxml="${basedir}/webapp/WEB-INF/web.xml" />
+    </target>
+</project>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<project name="ModifyBalReturnAllBal" basedir="." default="about.author">
+<property name="properties.file" location="build.properties"/>
+<property file="${properties.file}"/>
+
+<import file="build-webservice.xml" />
+<import file="${root.dir}/author/author.xml" />
+</project>
